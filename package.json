@@ -1,1 +1,31 @@
-{}
+{
+  "name": "proshop-v2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ainurKhamitova/proshop-v2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ainurKhamitova/proshop-v2/issues"
+  },
+  "homepage": "https://github.com/ainurKhamitova/proshop-v2#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "dotenv": "^16.2.0",
+    "nodemon": "^2.0.22"
+  }
+}
